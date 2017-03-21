@@ -1,0 +1,16 @@
+@import "../variables.scss";
+@import "../global/fonts.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: $font-size;
+  font-style: $font-style;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: $main-color;
+
+  background-color: $bg-sedona;
+}

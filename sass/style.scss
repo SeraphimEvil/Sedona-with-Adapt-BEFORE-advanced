@@ -3,12 +3,28 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+@import "global/body.scss";
 @import "global/fonts.scss";
 @import "global/forms.scss";
 @import "global/layout.scss";
 @import "global/type.scss";
 
+
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/page-main.scss";
+
+@import "blocks/promo.scss";
+@import "blocks/post.scss";
+@import "blocks/reason.scss";
 @import "blocks/feauteres.scss";
+
+
+@import "blocks/page-footer.scss";
+
+
 @import "blocks/field-checkbox.scss";
 @import "blocks/field-radio.scss";
 @import "blocks/field-text.scss";
@@ -16,13 +32,13 @@
 @import "blocks/form-fieldset.scss";
 @import "blocks/gallery.scss";
 @import "blocks/main-form.scss";
-@import "blocks/main-nav.scss";
+
 @import "blocks/map.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
-@import "blocks/post.scss";
-@import "blocks/promo.scss";
-@import "blocks/reason.scss";
+
+
+
+
+
+
 @import "blocks/search.scss";
 @import "blocks/video.scss";

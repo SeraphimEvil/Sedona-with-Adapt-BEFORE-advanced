@@ -1,0 +1,95 @@
+.main-nav {
+  background: $bg-sedona;
+  @include container;
+
+  a {
+    color: $second-color;
+    text-decoration: none;
+  }
+
+  &__close {
+    position: absolute;
+    font-size: 0;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    top: 17px;
+    right: 19px;
+    z-index: 5;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 21px;
+      background-color: #fff;
+      transform: rotate(45deg);
+      right: 2px;
+      top: 10px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 21px;
+      background-color: #fff;
+      transform: rotate(-45deg);
+      right: 2px;
+      top: 10px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    background: $mobile-color;
+    margin: 0;
+    padding: 0;
+
+    line-height: 40px;
+    text-align: center;
+    color: $second-color;
+   }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 55px;
+    border-bottom: 1px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+
+    position: relative;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: #669ec0;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .main-nav {
+
+  }
+}
+
+
+@media #{$desktop} {
+  .main-nav {
+
+  }
+}
