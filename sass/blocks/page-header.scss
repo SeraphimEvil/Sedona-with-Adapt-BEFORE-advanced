@@ -1,0 +1,33 @@
+.page-header {
+  @include container;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__logo {
+    // background-image: url("../img/logo-sedona-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__toggle {
+    position: absolute;
+
+    right: 20px;
+    top: 17px;
+
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0;
+
+    height: 22px;
+    width: 23px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    fill: $mobile-color;
+  }
+}
