@@ -1,12 +1,13 @@
 .reason {
   display: flex;
   flex-wrap: wrap;
+  background-color: #81b3d2;
 
   &__text-wrapper {
-    background-color: #81b3d2;
     position: relative;
     text-align: center;
     color: #fff;
+    padding-top: 45px; // костыль, починить при наличии свг треугольника
 
     &::before { // разобарться с треугольником
       position: absolute;
@@ -20,7 +21,7 @@
   &__title {
     font-size: 18px;
     line-height: 10px;
-    padding-top: 40px; // костыль, починить при наличии свг треугольника
+
   }
 
   &__text {
@@ -28,6 +29,7 @@
     line-height: 21px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-bottom: 45px;
   }
 
   &__photo {
@@ -37,5 +39,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -105px 0px;
+
+    &-2 { // сделать правильно при получении знаний
+      width: 320px;
+      height: 260px;
+      background: url('../img/photo-4-mobile@1x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--close {
+    background-color: #eee;
+  }
+
+  &--close .reason__title {
+    color: #000;
+  }
+
+  &--close .reason__number,
+  &--close .reason__text {
+    color: #333;
+  }
+
+  &--close .reason__text {
+    padding-bottom: 30px;
+  }
+
+  &--close .reason__text-wrapper {
+    border-bottom: 1px solid #d6d6d6;
+    padding-top: 30px;
+  }
+
+  &--close:last-child .reason__text-wrapper {
+    border-bottom: none;
   }
 }
