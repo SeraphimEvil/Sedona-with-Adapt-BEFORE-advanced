@@ -1,0 +1,41 @@
+.reason {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__text-wrapper {
+    background-color: #81b3d2;
+    position: relative;
+    text-align: center;
+    color: #fff;
+
+    &::before { // разобарться с треугольником
+      position: absolute;
+      content: '';
+      width: 320px;
+      height: 57px;
+      background-image: url('../img/intro-triangle.svg');
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 10px;
+    padding-top: 40px; // костыль, починить при наличии свг треугольника
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__photo {
+    width: 320px;
+    height: 260px;
+    background: url('../img/photo-city@1x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -105px 0px;
+  }
+}

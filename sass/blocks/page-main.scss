@@ -1,4 +1,6 @@
 .page-main {
   position: relative;
   top: -32px;
+
+  @include container;
 }
