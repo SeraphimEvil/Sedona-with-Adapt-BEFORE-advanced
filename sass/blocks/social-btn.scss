@@ -1,0 +1,24 @@
+.social-btn {
+  @include btn;
+
+  width: 47px;
+  height: 48px;
+
+  &--twitter {
+      background: url('../img/icon-twitter.svg') no-repeat;
+      background-size: 35px 35px;
+      background-position: center;
+    }
+
+    &--facebook {
+      background: url('../img/icon-facebook.svg') no-repeat;
+      background-size: 35px 35px;
+      background-position: center;
+    }
+
+    &--youtube {
+      background: url('../img/icon-youtube.svg') no-repeat;
+      background-size: 35px 35px;
+      background-position: center;
+    }
+}

@@ -9,19 +9,6 @@
     line-height: 26px;
   }
 
-  &__copyright {
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  &__academy {
-    width: 27px;
-    height: 34px;
-    background: url('../img/logo-htmlacademy.svg') no-repeat;
-    background-size: contain;
-  }
-
-
   &__logo {
     position: relative;
     margin-bottom: 30px;
@@ -36,5 +23,14 @@
     height: 34px;
     background: url('../img/logo-htmlacademy.svg') no-repeat;
     background-size: contain;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__social {
+    min-height: 47px;
   }
 }

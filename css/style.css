@@ -689,6 +689,30 @@ body {
   .page-footer__copyright {
     font-size: 14px;
     line-height: 26px; }
+  .page-footer__social {
+    min-height: 47px; }
+
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  background: #81b3d2;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 47px;
+  height: 48px; }
+  .social-btn--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat;
+    background-size: 35px 35px;
+    background-position: center; }
+  .social-btn--facebook {
+    background: url("../img/icon-facebook.svg") no-repeat;
+    background-size: 35px 35px;
+    background-position: center; }
+  .social-btn--youtube {
+    background: url("../img/icon-youtube.svg") no-repeat;
+    background-size: 35px 35px;
+    background-position: center; }
 
 .map {
   width: 320px;
@@ -727,6 +751,8 @@ body {
     padding-right: 30px;
     padding-left: 30px; }
   .search__btn {
+    display: inline-block;
+    vertical-align: top;
     background: #81b3d2;
     color: #fff;
     font-weight: 700;
