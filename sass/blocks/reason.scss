@@ -46,29 +46,55 @@
     }
   }
 
-  &--close {
-    background-color: #eee;
-  }
+  // &--close {
+  //   // background-color: #eee;
+  // }
 
-  &--close .reason__title {
+  // &--close .reason__title {
+  //   // color: #000;
+  // }
+
+  // &--close .reason__number,
+  // &--close .reason__text {
+  //   color: #333;
+  // }
+
+  // &--close .reason__text {
+  //   padding-bottom: 30px;
+  // }
+
+  // &--close .reason__text-wrapper {
+  //   border-bottom: 1px solid #d6d6d6;
+  //   padding-top: 30px;
+  // }
+
+  // &--close:last-child .reason__text-wrapper {
+  //   border-bottom: none;
+  // }
+}
+
+.reason--close {
+  background-color: #eee;
+
+  .reason__title {
     color: #000;
   }
 
-  &--close .reason__number,
-  &--close .reason__text {
+  .reason__number {
     color: #333;
   }
 
-  &--close .reason__text {
+  .reason__text {
+    color: #333;
     padding-bottom: 30px;
   }
 
-  &--close .reason__text-wrapper {
+  .reason__text-wrapper {
     border-bottom: 1px solid #d6d6d6;
     padding-top: 30px;
   }
 
-  &--close:last-child .reason__text-wrapper {
+  &:last-child .reqson__text-wrapper {
     border-bottom: none;
   }
 }

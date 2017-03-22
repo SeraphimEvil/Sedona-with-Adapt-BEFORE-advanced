@@ -596,19 +596,20 @@ body {
       background: url("../img/photo-4-mobile@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
-  .reason--close {
-    background-color: #eee; }
+
+.reason--close {
+  background-color: #eee; }
   .reason--close .reason__title {
     color: #000; }
-  .reason--close .reason__number,
-  .reason--close .reason__text {
+  .reason--close .reason__number {
     color: #333; }
   .reason--close .reason__text {
+    color: #333;
     padding-bottom: 30px; }
   .reason--close .reason__text-wrapper {
     border-bottom: 1px solid #d6d6d6;
     padding-top: 30px; }
-  .reason--close:last-child .reason__text-wrapper {
+  .reason--close:last-child .reqson__text-wrapper {
     border-bottom: none; }
 
 .feauteres {
@@ -732,7 +733,7 @@ body {
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
-  min-height: 290px; }
+  min-height: 300px; }
   @media (min-width: 768px) {
     .search {
       width: 700px; } }
