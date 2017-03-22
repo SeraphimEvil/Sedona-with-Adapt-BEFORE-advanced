@@ -1,6 +1,17 @@
 .post-wrapper {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   @include container;
+
+  &::before { // разобарться с треугольником
+      position: absolute;
+      content: '';
+      left: 0;
+      top: -0px;
+      width: 320px;
+      height: 57px;
+      // background-image: url('../img/intro-triangle.svg');
+    }
 }

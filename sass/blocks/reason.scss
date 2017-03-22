@@ -8,16 +8,6 @@
     text-align: center;
     color: #fff;
     padding-top: 45px; // костыль, починить при наличии свг треугольника
-
-    &::before { // разобарться с треугольником
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      width: 320px;
-      height: 57px;
-      background-image: url('../img/intro-triangle.svg');
-    }
   }
 
   &__title {
