@@ -6,6 +6,7 @@
     height: 389px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: -210px 0;
+    margin-bottom: 40px;
 
     &::before {
       position: absolute;
@@ -31,5 +32,22 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    color: #333;
   }
 }
