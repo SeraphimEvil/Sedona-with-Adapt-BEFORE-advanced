@@ -1,0 +1,40 @@
+.page-footer {
+  @include container;
+
+  text-align: center;
+
+  &__hashtag {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__academy {
+    width: 27px;
+    height: 34px;
+    background: url('../img/logo-htmlacademy.svg') no-repeat;
+    background-size: contain;
+  }
+
+
+  &__logo {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: -35px;
+  }
+
+  &__logo::before {
+    position: absolute;
+    content: '';
+    right: 95px;;
+    width: 27px;
+    height: 34px;
+    background: url('../img/logo-htmlacademy.svg') no-repeat;
+    background-size: contain;
+  }
+}

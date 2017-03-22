@@ -1,5 +1,11 @@
 .main-nav {
+  @include container;
   background: $bg-sedona;
+  position: absolute;
+  top: -250px;
+  z-index: 10;
+  transition: 0.5s;
+
 
 
   a {
@@ -10,13 +16,15 @@
   &__close {
     position: absolute;
     font-size: 0;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: none;
     outline: none;
-    top: 17px;
-    right: 19px;
+    top: 3px;
+    right: 3px;
+    // top: 17px;
+    // right: 19px;
     z-index: 5;
 
     &::before {
@@ -26,8 +34,8 @@
       width: 21px;
       background-color: #fff;
       transform: rotate(45deg);
-      right: 2px;
-      top: 10px;
+      right: 17px;
+      top: 25px;
     }
 
     &::after {
@@ -37,8 +45,8 @@
       width: 21px;
       background-color: #fff;
       transform: rotate(-45deg);
-      right: 2px;
-      top: 10px;
+      right: 17px;
+      top: 25px;
     }
   }
 
