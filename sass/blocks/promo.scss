@@ -1,0 +1,35 @@
+.promo {
+  position: relative;
+
+  &__img {
+    width: 320px;
+    height: 389px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: -210px 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 90px;
+      left: 50%;
+      margin-left: -140px;
+      width: 280px;
+      height: 210px;
+      background-image: url("../img/text-sedona-index.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 332px;
+      left: 0;
+      width: 320px;
+      height: 57px;
+      background-image: url("../img/intro-triangle.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
