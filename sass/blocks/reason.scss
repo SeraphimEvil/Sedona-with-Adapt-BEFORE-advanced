@@ -7,8 +7,13 @@
     position: relative;
     text-align: center;
     color: #fff;
-    padding-top: 45px; // костыль, починить при наличии свг треугольника
+    padding-top: 30px; // костыль, починить при наличии свг треугольника
+
+    &:first-child {
+      padding-top: 80px;
+    }
   }
+
 
   &__title {
     font-size: 18px;

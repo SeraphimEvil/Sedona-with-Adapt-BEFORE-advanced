@@ -534,7 +534,7 @@ body {
     line-height: 26px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
     text-align: center;
     color: #333; }
 
@@ -556,9 +556,10 @@ body {
     position: absolute;
     content: '';
     left: 0;
-    top: -0px;
+    top: 0px;
     width: 320px;
-    height: 57px; }
+    height: 37px;
+    background-image: url("../img/white-triangle.png"); }
 
 .reason {
   display: -ms-flexbox;
@@ -570,7 +571,9 @@ body {
     position: relative;
     text-align: center;
     color: #fff;
-    padding-top: 45px; }
+    padding-top: 30px; }
+    .reason__text-wrapper:first-child {
+      padding-top: 80px; }
   .reason__title {
     font-size: 18px;
     line-height: 10px; }
@@ -671,14 +674,6 @@ body {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px; }
-  .page-footer__copyright {
-    font-size: 14px;
-    line-height: 26px; }
-  .page-footer__academy {
-    width: 27px;
-    height: 34px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat;
-    background-size: contain; }
   .page-footer__logo {
     position: relative;
     margin-bottom: 30px;
@@ -691,6 +686,9 @@ body {
     height: 34px;
     background: url("../img/logo-htmlacademy.svg") no-repeat;
     background-size: contain; }
+  .page-footer__copyright {
+    font-size: 14px;
+    line-height: 26px; }
 
 .map {
   width: 320px;
