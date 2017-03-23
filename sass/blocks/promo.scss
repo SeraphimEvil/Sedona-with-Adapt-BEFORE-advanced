@@ -46,10 +46,38 @@
   &__text {
     font-size: 14px;
     line-height: 26px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px; // ежели что поправить во всех текстах НА ЭТО значение
+    padding-right: 20px; // ежели что поправить во всех текстах НА ЭТО значение
     padding-bottom: 15px;
     text-align: center;
     color: #333;
+
+    &--fix {
+      padding-left: 23px;
+      padding-right: 23px;
+    }
   }
+}
+
+.promo__img {
+  &--second {
+      height: 159px;
+      background-size: 768px 389px;
+      background-repeat: no-repeat;
+      background-position: -200px -250px;
+
+      &::before {
+        width: 230px;
+        height: 40px;
+        margin-left: -115px;
+        top: 51px;
+        background-image: url("../img/text-sedona.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &::after {
+        top: 82px;
+      }
+    }
 }
