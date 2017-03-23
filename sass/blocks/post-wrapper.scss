@@ -10,9 +10,10 @@
       content: '';
       left: 0;
       top: 0px;
-      width: 320px;
+      width: 100%; // 320px
       height: 37px;
       background-image: url('../img/white-triangle.png');
+      background-repeat: no-repeat;
       // background-color: red;
     }
 }
