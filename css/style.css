@@ -721,18 +721,24 @@ body {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  text-transform: uppercase;
   width: 47px;
   height: 48px; }
+  .social-btn:hover {
+    background: #669ec0; }
+  .social-btn:active {
+    color: rgba(255, 255, 255, 0.3); }
   .social-btn--twitter {
-    background: url("../img/icon-twitter.svg") no-repeat;
+    background: #81b3d2 url("../img/icon-twitter.svg") no-repeat;
     background-size: 35px 35px;
     background-position: center; }
   .social-btn--facebook {
-    background: url("../img/icon-facebook.svg") no-repeat;
+    background: #81b3d2 url("../img/icon-facebook.svg") no-repeat;
     background-size: 35px 35px;
     background-position: center; }
   .social-btn--youtube {
-    background: url("../img/icon-youtube.svg") no-repeat;
+    background: #81b3d2 url("../img/icon-youtube.svg") no-repeat;
     background-size: 35px 35px;
     background-position: center; }
 
@@ -861,18 +867,17 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 280px;
-  outline: 1px solid red; }
+  width: 280px; }
 
 .field-text__item {
-  margin-bottom: 20px;
-  outline: 1px solid blue; }
+  margin-bottom: 20px; }
 
 .field-text__text {
   color: #333;
   font-size: 14px;
   line-height: 26px;
-  padding-right: 18px; }
+  padding-right: 18px;
+  position: relative; }
 
 .field-text__input {
   border: none;
@@ -884,9 +889,8 @@ body {
   line-height: 26px;
   height: 60px;
   border-radius: 0px;
-  width: 140px; }
+  width: 160px; }
   .field-text__input-wrap {
-    outline: 1px solid black;
     width: 100%; }
   .field-text__input:hover {
     background: #e5e5e5; }
@@ -894,13 +898,44 @@ body {
     background: transparent;
     border: 4px solid #e5e5e5;
     padding-left: 18px;
-    height: 52px; }
+    height: 52px;
+    width: 156px; }
   .field-text__input::-webkit-input-placeholder {
     color: #000; }
   .field-text__input:-ms-input-placeholder {
     color: #000; }
   .field-text__input::placeholder {
     color: #000; }
+
+.field-text:nth-child(2) input {
+  width: 195px; }
+  .field-text:nth-child(2) input:focus {
+    width: 191px; }
+
+.field-text__input--fix {
+  width: 200px; }
+  .field-text__input--fix:focus {
+    width: 196px; }
+
+.field-text__text--email::before {
+  position: absolute;
+  content: '';
+  width: 59px;
+  height: 62px;
+  left: 217px;
+  top: 22px;
+  background: #e6e6e6 url("../img/icon-mail.svg") no-repeat;
+  background-position: 50% 50%; }
+
+.field-text__text--phone::before {
+  position: absolute;
+  content: '';
+  width: 59px;
+  height: 62px;
+  left: 217px;
+  top: 22px;
+  background: #e6e6e6 url("../img/icon-phone.svg") no-repeat;
+  background-position: 50% 50%; }
 
 .field-textarea {
   padding-left: 20px;
@@ -1029,6 +1064,27 @@ body {
     .map {
       width: 1200px; } }
 
+.form-button {
+  display: inline-block;
+  vertical-align: top;
+  background: #81b3d2;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 19px 50px;
+  font-size: 21px;
+  line-height: 26px;
+  display: -ms-flexbox;
+  display: flex; }
+  .form-button:hover {
+    background: #669ec0; }
+  .form-button:active {
+    color: rgba(255, 255, 255, 0.3); }
+
 .search {
   min-width: 320px;
   margin: 0 auto;
@@ -1059,9 +1115,15 @@ body {
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+    border: none;
+    text-transform: uppercase;
     font-size: 21px;
     line-height: 26px;
     padding: 17px 50px; }
+    .search__btn:hover {
+      background: #669ec0; }
+    .search__btn:active {
+      color: rgba(255, 255, 255, 0.3); }
     .search__btn:hover {
       background: #669ec0; }
     .search__btn:active {
