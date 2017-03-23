@@ -45,7 +45,7 @@
       </p>
     </section>
     <form class="main-form" action="https://echo.htmlacademy.ru/" method="get">
-      <div class="field-text form__fieldset">
+      <div class="field-text form-fieldset">
         <h2 class="field-text__title">
           Представьтесь, пожалуйста:
         </h2>
@@ -70,7 +70,7 @@
           </label>
         </div>
       </div>
-      <div class="field-text form__fieldset">
+      <div class="field-text form-fieldset">
         <h2 class="field-text__title">
           Контактная информация:
         </h2>
@@ -95,25 +95,30 @@
           </label>
         </div>
       </div>
-      <div class="field-radio form__fieldset">
+      <div class="field-radio form-fieldset">
         <h2 class="field-radio__title">
           Ваше общее впечатление:
         </h2>
         <div class="field-radio__item-wrap">
           <label for="good" class="field-radio__item">
-            <input type="radio" class="field-radio__input" name="good" id="good" checked>
+            <input type="radio" class="field-radio__input" name="impression" id="good" checked>
+            <span class="field-radio__indicator"></span>
             <span class="field-radio__text">
               Скорее положительное
             </span>
+
           </label>
           <label for="bad" class="field-radio__item">
-            <input type="radio" class="field-radio__input" name="bad" id="bad">
+            <input type="radio" class="field-radio__input" name="impression" id="bad">
+            <span class="field-radio__indicator"></span>
             <span class="field-radio__text">
               Скорее отрицательное
             </span>
+
           </label>
           <label for="unknown" class="field-radio__item">
-            <input type="radio" class="field-radio__input" name="unknown" id="unknown">
+            <input type="radio" class="field-radio__input" name="impression" id="unknown">
+            <span class="field-radio__indicator"></span>
             <span class="field-radio__text">
               Затрудняюсь ответить
             </span>
@@ -126,39 +131,42 @@
         </h2>
         <div class="field-checkbox__item-wrap">
           <label for="devibridge" class="field-checkbox__item">
-            <input type="checkbox" class="field-checkbox__input" name="devibridge" id="devibridge" checked>
+            <input type="checkbox" class="field-checkbox__input" name="sight" id="devibridge" checked>
+            <span class="field-checkbox__indicator"></span>
             <span class="field-checkbox__text">
               Мост Дьявола
             </span>
           </label>
           <label for="slidepark" class="field-checkbox__item">
-            <input type="checkbox" class="field-checkbox__input" name="slidepark" id="slidepark" checked>
+            <input type="checkbox" class="field-checkbox__input" name="sight" id="slidepark" checked>
+            <span class="field-checkbox__indicator"></span>
             <span class="field-checkbox__text">
               Слайд-парк
             </span>
           </label>
           <label for="bellrock" class="field-checkbox__item">
-            <input type="checkbox" class="field-checkbox__input" name="bellrock" id="bellrock">
+            <input type="checkbox" class="field-checkbox__input" name="sight" id="bellrock">
+            <span class="field-checkbox__indicator"></span>
             <span class="field-checkbox__text">
               Гора-Колокол
             </span>
           </label>
           <label for="redrocks" class="field-checkbox__item">
-            <input type="checkbox" class="field-checkbox__input" name="redrocks" id="redrocks" checked>
+            <input type="checkbox" class="field-checkbox__input" name="sight" id="redrocks" checked>
+            <span class="field-checkbox__indicator"></span>
             <span class="field-checkbox__text">
               Красные скалы
             </span>
           </label>
         </div>
       </div>
-      <div class="field-textarea form__fieldset">
+      <div class="field-textarea form-fieldset">
         <h2 class="field-textarea__title">
           <label for="emotions">
             Опишите свои эмоции:
           </label>
         </h2>
-        <textarea class="field-textarea__item" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги">
-        </textarea>
+        <textarea class="field-textarea__item" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
 
       <button class="from-button  btn" type="sumbit">
