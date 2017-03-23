@@ -376,7 +376,7 @@ body {
   src: url("../../fonts/ptsans.woff") format("woff"), url("../../fonts/ptsans.woff2") format("woff2"); }
 
 .page-header {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .page-header {
@@ -408,7 +408,7 @@ body {
     fill: #81b3d2; }
 
 .main-nav {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background: #ffffff;
   position: absolute;
@@ -484,7 +484,7 @@ body {
 .page-main {
   position: relative;
   top: -32px;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .page-main {
@@ -544,7 +544,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .post-wrapper {
@@ -609,7 +609,7 @@ body {
   .reason--close .reason__text-wrapper {
     border-bottom: 1px solid #d6d6d6;
     padding-top: 30px; }
-  .reason--close:last-child .reqson__text-wrapper {
+  .reason--close:last-child .reason__text-wrapper {
     border-bottom: none; }
 
 .feauteres {
@@ -662,7 +662,7 @@ body {
     color: #333; }
 
 .page-footer {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   text-align: center; }
   @media (min-width: 768px) {
@@ -716,7 +716,7 @@ body {
     background-position: center; }
 
 .map {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   height: 350px;
   background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
@@ -729,7 +729,7 @@ body {
       width: 1200px; } }
 
 .search {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
