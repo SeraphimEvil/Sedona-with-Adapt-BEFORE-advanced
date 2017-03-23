@@ -37,7 +37,7 @@
     line-height: 26px;
     height: 60px;
     border-radius: 0px;
-    width: 160px; //
+    width: 152.5px; //
 
     &-wrap {
       width: 100%; //
@@ -52,7 +52,7 @@
       border: 4px solid #e5e5e5;
       padding-left: 18px;
       height: 52px;
-      width: 156px;
+      width: 147.5px;
     }
 
     &::placeholder {
@@ -61,19 +61,19 @@
   }
 
   &:nth-child(2) input {
-    width: 195px;
+    width: 185px;
 
     &:focus {
-      width: 191px;
+      width: 181px;
     }
   }
 }
 
 .field-text__input--fix {
-  width: 200px;
+  width: 190px;
 
   &:focus {
-    width: 196px;
+    width: 186px;
   }
 }
 
@@ -81,20 +81,22 @@
   position: absolute;
   content: '';
   width: 59px;
-  height: 62px;
-  left: 217px;
-  top: 22px;
+  height: 68.5px;
+  left: 207px;
+  top: 23px;
   background: #e6e6e6 url('../img/icon-mail.svg') no-repeat;
   background-position: 50% 50%;
+  background-size: 25px 25px;
 }
 
 .field-text__text--phone::before {
   position: absolute;
   content: '';
   width: 59px;
-  height: 62px;
-  left: 217px;
-  top: 22px;
+  height: 68.5px;
+  left: 207px;
+  top: 23px;
   background: #e6e6e6 url('../img/icon-phone.svg') no-repeat;
   background-position: 50% 50%;
+  background-size: 25px 25px;
 }
