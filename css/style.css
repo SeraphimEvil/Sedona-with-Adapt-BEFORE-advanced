@@ -861,3 +861,93 @@ body {
       background: #669ec0; }
     .search__btn:active {
       color: #88b6d1; }
+
+.video {
+  min-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 460px; }
+  @media (min-width: 768px) {
+    .video {
+      width: 700px; } }
+  @media (min-width: 1200px) {
+    .video {
+      width: 1200px; } }
+  .video__title {
+    font-size: 18px;
+    line-height: 26px; }
+  .video__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px; }
+  .video__photo {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url("../img/video-mobile@1x.jpg") no-repeat; }
+  .video__controls {
+    position: absolute;
+    width: 280px; }
+    .video__controls-top {
+      position: absolute;
+      width: 280px;
+      height: 45px;
+      background-color: rgba(0, 0, 0, 0.6);
+      left: 50%;
+      margin-left: -120px;
+      top: 155px; }
+      .video__controls-top-scale {
+        width: 235px;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        left: 50%;
+        margin-left: -117px;
+        top: 21px; }
+      .video__controls-top-mark {
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+        position: absolute;
+        border-radius: 50%;
+        top: 18px;
+        left: 58px; }
+    .video__controls-bottom {
+      position: absolute;
+      width: 280px;
+      height: 65px;
+      background-color: #f2f2f2;
+      left: 50%;
+      margin-left: -120px;
+      top: 200px; }
+      .video__controls-bottom__btn-repeat {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        width: 21px;
+        height: 21px;
+        outline: none;
+        border: none;
+        background: url("../img/icon-video-replay.svg") no-repeat; }
+      .video__controls-bottom__btn-sub {
+        position: absolute;
+        top: 20px;
+        left: 174px;
+        width: 32px;
+        height: 31px;
+        outline: none;
+        border: none;
+        background: url("../img/icon-video-subtitles.svg") no-repeat; }
+      .video__controls-bottom__btn-fullscreen {
+        position: absolute;
+        top: 20px;
+        left: 237px;
+        width: 21px;
+        height: 21px;
+        outline: none;
+        border: none;
+        background: url("../img/icon-video-fullscreen.svg") no-repeat; }
