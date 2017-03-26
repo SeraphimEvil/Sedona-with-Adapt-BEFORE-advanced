@@ -1,16 +1,20 @@
 .page-header {
   @include container;
+  position: relative;
 
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-  }
+  // &__wrapper {
+  //   display: flex;
+  //   justify-content: center;
+  //   position: relative;
+  //   z-index: 1;
+  // }
 
   &__logo {
-    // background-image: url("../img/logo-sedona-mobile.svg");
-    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 102px;
+    height: 83px;
+    position: relative;
+    z-index: 5;
   }
 
   &__toggle {
@@ -29,5 +33,20 @@
     background-image: url("../img/icon-menu.svg");
     background-repeat: no-repeat;
     fill: $mobile-color;
+  }
+}
+
+
+@media #{$tablet} {
+.page-header {
+  height: 50px;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__logo {
+      top: -50px;
+    }
   }
 }

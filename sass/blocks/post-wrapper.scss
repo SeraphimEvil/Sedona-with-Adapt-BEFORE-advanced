@@ -1,9 +1,9 @@
 .post-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   position: relative;
 
-  @include container;
+  // @include container;
 
   &::before { // разобарться с треугольником
       position: absolute;
@@ -16,4 +16,14 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+}
+
+
+@media #{$tablet} {
+  .post-wrapper {
+
+    &::before {
+      background-image: none;
+    }
+  }
 }

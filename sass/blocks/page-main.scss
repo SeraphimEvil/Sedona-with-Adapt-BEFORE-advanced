@@ -1,6 +1,10 @@
 .page-main {
   position: relative;
   top: -32px;
+}
 
-  @include container;
+@media #{$tablet} {
+  .page-main {
+    top: 0;
+  }
 }
