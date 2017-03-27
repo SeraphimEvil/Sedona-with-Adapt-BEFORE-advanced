@@ -42,3 +42,22 @@
     }
   }
 }
+
+@media #{$tablet} {
+  .search {
+    width: 460px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    &__btn {
+      width: calc(100% - 100px);
+    }
+  }
+}

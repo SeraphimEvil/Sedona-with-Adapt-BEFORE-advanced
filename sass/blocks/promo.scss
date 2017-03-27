@@ -114,6 +114,10 @@
       margin-right: auto;
       padding-left: 0px;
       padding-right: 0px;
+
+      &--second {
+        font-size: 30px;
+      }
     }
 
     &__text {
@@ -122,6 +126,19 @@
       margin-right: auto;
       padding-left: 0px;
       padding-right: 0px;
+    }
+  }
+
+  .promo__img {
+
+    &--second {
+      height: 290px;
+      background-position: 0 -228px;
+    }
+
+    &::after {
+
+      top: 233px;
     }
   }
 }

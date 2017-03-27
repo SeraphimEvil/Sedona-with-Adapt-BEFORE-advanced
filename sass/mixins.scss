@@ -11,6 +11,11 @@
   }
 }
 
+@mixin container--photo {
+  width: 648px;
+  margin: 0 auto;
+}
+
 
 @mixin btn {
   display: inline-block;
