@@ -3,5 +3,13 @@
   flex-wrap: wrap;
   position: relative;
 
-  @include container;
+  // @include container;
+}
+
+
+@media #{$tablet} {
+  .gallery {
+    @include container--photo;
+    margin-bottom: 50px;
+  }
 }

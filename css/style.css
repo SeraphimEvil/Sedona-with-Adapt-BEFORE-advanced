@@ -1184,15 +1184,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
-  width: 320px;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .gallery {
-      width: 700px; } }
-  @media (min-width: 1200px) {
-    .gallery {
-      width: 1200px; } }
+  position: relative; }
+
+@media (min-width: 768px) {
+  .gallery {
+    width: 648px;
+    margin: 0 auto;
+    margin-bottom: 50px; } }
 
 .post {
   border-top: 1px solid #e5e5e5;
@@ -1201,11 +1199,12 @@ body {
   padding-bottom: 20px; }
   .post:last-child {
     border-bottom: 1px solid #e5e5e5; }
-  .post:nth-child(1) .post__photo {
-    width: 280px;
-    height: 280px;
+  .post:nth-child(1) {
     margin: 0 auto;
-    background: url("../img/photo-1-mobile@1x.jpg") no-repeat; }
+    width: 280px; }
+    .post:nth-child(1) .post__photo {
+      min-height: 280px;
+      background: url("../img/photo-1-mobile@1x.jpg") no-repeat; }
   .post:nth-child(2) .post__photo {
     width: 280px;
     height: 280px;
@@ -1253,6 +1252,54 @@ body {
     height: 23px;
     left: 0;
     background: url("../img/icon-like.svg") no-repeat; }
+
+@media (min-width: 768px) {
+  .post {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    .post:nth-child(1) {
+      width: 100%; }
+      .post:nth-child(1) .post__photo {
+        min-height: 400px;
+        background: url("../img/photo-1-tablet.jpg") no-repeat; }
+    .post:nth-child(2) {
+      width: 50%; }
+      .post:nth-child(2) .post__photo {
+        width: 100%;
+        min-height: 267px;
+        background: url("../img/photo-2-tablet.jpg") no-repeat;
+        background-size: cover; }
+    .post:nth-child(3) {
+      width: 50%; }
+      .post:nth-child(3) .post__photo {
+        width: 100%;
+        min-height: 267px;
+        background: url("../img/photo-3-tablet.jpg") no-repeat;
+        background-size: cover; }
+    .post:nth-child(4) {
+      width: 50%; }
+      .post:nth-child(4) .post__photo {
+        width: 100%;
+        min-height: 267px;
+        background: url("../img/photo-4-tablet.jpg") no-repeat;
+        background-size: cover; }
+    .post__quote {
+      position: relative;
+      background: #f2f2f2;
+      width: calc(100% - 40px);
+      min-height: 80px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .post__like {
+      position: absolute;
+      top: 30px;
+      right: 20px; } }
 
 .main-form {
   width: 320px;
