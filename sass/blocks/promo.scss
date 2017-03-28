@@ -134,7 +134,13 @@
     &--second {
       height: 290px;
       background-position: 0 -228px;
+
+      &::before {
+        height: 90px;
+      }
     }
+
+
 
     &::after {
 

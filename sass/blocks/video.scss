@@ -106,7 +106,7 @@
 
 @media #{$tablet} {
   .video {
-    @include container--photo;
+    @include container--second;
     margin-bottom: 70px;
 
     &__title {

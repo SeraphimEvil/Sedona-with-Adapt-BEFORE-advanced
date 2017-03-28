@@ -9,7 +9,7 @@
 
 @media #{$tablet} {
   .gallery {
-    @include container--photo;
+    @include container--second;
     margin-bottom: 50px;
   }
 }
