@@ -103,3 +103,74 @@
     }
   }
 }
+
+@media #{$tablet} {
+  .video {
+    @include container--photo;
+    margin-bottom: 70px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+
+    &__photo {
+      width: 100%;
+      min-height: 499px;
+      background: url('../img/video-tablet.jpg') no-repeat;
+    }
+
+    &__controls {
+      width: 100%;
+
+      &-top {
+        width: 100%;
+        height: 95px;
+        top: 405px;
+        left: 0;
+        margin-left: 0px;
+
+        &-scale {
+          width: 390px;
+          left: 93px;
+          margin-left: 0px;
+          top: 43px;
+        }
+
+        &-mark {
+          top: 40px;
+          left: 205px;
+          cursor: pointer;
+        }
+      }
+
+      &-bottom {
+
+        background: transparent;
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+        top: 0px;
+
+        &__btn-repeat {
+          top: 440px;
+          left: 35px;
+        }
+
+        &__btn-sub {
+          top: 440px;
+          left: 525px;
+        }
+
+        &__btn-fullscreen {
+          top: 440px;
+          left: 580px;
+        }
+      }
+    }
+  }
+}
